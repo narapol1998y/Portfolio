@@ -19,10 +19,10 @@ const App = () => {
     <div id="start-section" data-theme={theme}  >
       <AnimCursor />
       <Navbar onThemeToggle={handleThemeToggle} />
-      
-      <img src={inori} alt="img" className="mask mask-squircle absolute  -z-20 xl:z-0 md:right-20 animate-bounce" />
+      <div className='relative'>
+      <img src={inori} alt="img" className="mask mask-squircle absolute hidden 2xl:block   md:right-20 animate-bounce" />
     
-      <div className='container mx-auto pt-[400px] '>
+      <div className='container mx-auto pt-[400px] z-40 '>
         <ol className=" sm:ml-5 border-l-2 border-indigo-500  ">
           {/* Start */}
           <li>
@@ -69,6 +69,7 @@ const App = () => {
             </div>
           </li>
         </ol>
+      </div>
       </div>
     </div>
 
