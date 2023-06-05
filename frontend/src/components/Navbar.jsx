@@ -7,7 +7,7 @@ const Navbar = ({ onThemeToggle }) => {
     };
     return (
         <>
-            <div className="navbar lg:hidden bg-base-100">
+            <div className="navbar lg:hidden bg-base-100 ">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost btn-circle">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
@@ -25,15 +25,15 @@ const Navbar = ({ onThemeToggle }) => {
 
             </div>
 
-            <div className='hidden lg:block'>
-                <div className=" flex justify-between px-10 py-5">
-                    <a href={cv} download className="btn btn-ghost normal-case text-xl">Download CV</a>
-                    <div className="flex gap-7">
-                        <a className='hover:scale-110 duration-150' onClick={() => scrollToSection('start-section')}>Start/&gt;</a>
-                        <a className='hover:scale-110 duration-150' onClick={() => scrollToSection('work-section')}>Work/&gt;</a>
-                        <a className='hover:scale-110 duration-150' onClick={() => scrollToSection('about-section')}>About/&gt;</a>
-                        <a className='hover:scale-110 duration-150' onClick={() => scrollToSection('contact-section')}>Contact/&gt;</a>
-                        <div className="flex gap-2">
+            <div className='hidden lg:block bg-base-100 bg-opacity-70'>
+                <div className=" flex justify-between px-10 py-2">
+                    <a href={cv} download className="btn btn-ghost normal-case text-xl hover:scale-110 duration-150">Download CV</a>
+                    <div className="flex gap-7 my-auto">
+                        <a className='hover:scale-110 duration-150 btn btn-ghost' onClick={() => scrollToSection('start-section')}>Start/&gt;</a>
+                        <a className='hover:scale-110 duration-150 btn btn-ghost' onClick={() => scrollToSection('work-section')}>Work/&gt;</a>
+                        <a className='hover:scale-110 duration-150 btn btn-ghost' onClick={() => scrollToSection('about-section')}>About/&gt;</a>
+                        <a className='hover:scale-110 duration-150 btn btn-ghost' onClick={() => scrollToSection('contact-section')}>Contact/&gt;</a>
+                        <div className="flex gap-2 my-auto">
                             Theme
                             <input type="checkbox" className="toggle toggle-accent hover:cursor-none" onChange={onThemeToggle} />
                         </div>

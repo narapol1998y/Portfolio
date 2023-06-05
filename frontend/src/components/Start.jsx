@@ -8,8 +8,8 @@ const Start = () => {
             <p className='text-xl md:text-6xl'>i design and develop webapps</p>
             <label className="swap swap-flip text-9xl">
                 <input type="checkbox" />
-                <div className="swap-on">😈</div>
-                <div className="swap-off">😇</div>
+                <div className="swap-on text-4xl sm:text-9xl">😈</div>
+                <div className="swap-off text-4xl sm:text-9xl">😇</div>
             </label>
         </>
     )

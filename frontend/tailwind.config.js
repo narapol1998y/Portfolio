@@ -8,7 +8,7 @@ export default {
   },
   plugins: [require("daisyui"),require("tw-elements/dist/plugin.cjs")],
   daisyui: {
-    themes: ["light", "dark", "cupcake", "night", "cmyk","luxury"],
+    themes: ["light", "dark", "cupcake", "night", "cmyk","luxury","fantasy","synthwave"],
   },
 }
 
