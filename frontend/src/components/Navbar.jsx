@@ -1,4 +1,6 @@
-import cv from '../assets/CV_นราพล.pdf'
+import cvport from '../assets/CV_นราพล.pdf'
+import Cv from '../components/Cv'
+import { Link } from "react-router-dom";
 
 const Navbar = ({ onThemeToggle }) => {
     const scrollToSection = (id) => {
@@ -20,14 +22,14 @@ const Navbar = ({ onThemeToggle }) => {
                     </ul>
                 </div>
                 <div className="flex-1">
-                    <a href={cv} download className="btn btn-ghost normal-case text-xl">Download CV</a>
+                    <a href={cvport} download className="btn btn-ghost normal-case text-xl">Download CV</a>
                 </div>
 
             </div>
 
             <div className='hidden lg:block bg-base-100 bg-opacity-70'>
                 <div className=" flex justify-between px-10 py-2">
-                    <a href={cv} download className="btn btn-ghost normal-case text-xl hover:scale-110 duration-150">Download CV</a>
+                    <a href={cvport} download className="btn btn-ghost normal-case text-xl hover:scale-110 duration-150">Download CV</a>
                     <div className="flex gap-7 my-auto">
                         <a className='hover:scale-110 duration-150 btn btn-ghost' onClick={() => scrollToSection('start-section')}>Start/&gt;</a>
                         <a className='hover:scale-110 duration-150 btn btn-ghost' onClick={() => scrollToSection('work-section')}>Work/&gt;</a>
